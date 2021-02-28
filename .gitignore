@@ -1,0 +1,10 @@
+__pycache__
+.ipynb_checkpoints
+.vscode
+model_trained
+chat_off.py
+data.pth
+intents_off.json
+sandbox.ipynb
+dictionary.json
+train_off.py

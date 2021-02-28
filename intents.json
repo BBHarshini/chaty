@@ -1,0 +1,99 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Oi",
+                "Olá",
+                "Olá, tudo bem?",
+                "Tem alguém aí?",
+                "Boa tarde",
+                "Bom dia"
+            ],
+            "responses": [
+                "Oi :-)",
+                "Olá, obrigado por vir",
+                "Bom dia, em que posso lhe ajudar?",
+                "Oi, tudo bem?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Tchau",
+                "Até mais",
+                "Adeus",
+                "Até logo"
+            ],
+            "responses": [
+                "Obrigado por vir, até logo.",
+                "Tenha um bom dia.",
+                "Tchau! Volte sempre."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Obrigado",
+                "Muito obrigado!",
+                "Valeu",
+                "Muito agradecido"
+            ],
+            "responses": [
+                "Feliz em ajudar!",
+                "Foi um prazer ajudar.",
+                "Imagina"
+            ]
+        },
+        {
+            "tag": "items",
+            "patterns": [
+                "Quais os produtos que vocês vendem?",
+                "Que produtos vocês têm?",
+                "O que vocês vendem?"
+            ],
+            "responses": [
+                "Nós vendemos café e chá",
+                "Nós temos café e chá"
+            ]
+        },
+        {
+            "tag": "payments",
+            "patterns": [
+                "Aceitam cartão?",
+                "Vocês aceitam cartão de crédito?",
+                "Passam cartão?",
+                "Vocês aceitam PIX?",
+                "Quais as formas de pagamento?"
+            ],
+            "responses": [
+                "Nós aceitamos VISA, Mastercard e PIX.",
+                "Nós aceitamos todos os cartões e PIX."
+            ]
+        },
+        {
+            "tag": "delivery",
+            "patterns": [
+                "Qual é o prazo de entrega?",
+                "Quando eu vou receber meu pedido?",
+                "Que dia chega meu pedido?"
+            ],
+            "responses": [
+                "A entrega leva entre 2 e 4 dias",
+                "Nós entregamos em 2 a 4 dias"
+            ]
+        },
+        {
+            "tag": "funny",
+            "patterns": [
+                "Me conte uma piada!",
+                "Fale algo engraçado!",
+                "Você conhece alguma piada?"
+            ],
+            "responses": [
+                "Eu morava numa ilha e me mudei para outra. Isso não foi um trocadilho, mas uma trocadilha..",
+                "Por que o lagarto deixou seu filho de castigo? Porque ele réptil de ano."
+            ]
+        }
+    ]
+}
