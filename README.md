@@ -1,6 +1,6 @@
 # A simple chatbot with tensorflow
 
-Inpired on [python-engineer/pytorch-chatbot](https://github.com/python-engineer/pytorch-chatbot)
+Inpired by [python-engineer/pytorch-chatbot](https://github.com/python-engineer/pytorch-chatbot)
 
 ## Installation
 MacOS/Linux
