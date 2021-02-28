@@ -16,11 +16,12 @@ tags = data['tags']
 
 model = tf.keras.models.load_model('model_trained')
 
-bot_name = "Sam"
-print("Let's chat! Type 'quit' to exit")
+bot_name = "Valentina"
+print("Vamos conversar! Digite 'sair' para encerrar")
 while True:
-    sentence = input("You: ")
-    if sentence == 'quit':
+    sentence = input("Você: ")
+    if sentence == 'sair':
+        print(f'Encerrando... Até logo.')
         break
 
     sentence = tokenize(sentence)
@@ -40,4 +41,4 @@ while True:
             if tag == intent['tag']:
                 print(f"{bot_name}: {random.choice(intent['responses'])}")
     else:
-        print(f"{bot_name}: I do not understand...")
+        print(f"{bot_name}: Desculpe, não sei nada sobre isso...")
