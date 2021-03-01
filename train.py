@@ -2,6 +2,7 @@ import json
 import numpy as np
 from nltk_utils import tokenize, stem, bag_of_words
 import tensorflow as tf
+from model import create_model
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
@@ -61,10 +62,7 @@ with open('dictionary.json', 'w') as f:
 dataset = tf.data.Dataset.from_tensor_slices((X_train, y_train))
 dataset = dataset.shuffle(shuffle_buffer_size).batch(batch_size)
 
-model = tf.keras.Sequential()
-model.add(tf.keras.layers.Dense(input_size, activation='relu'))
-model.add(tf.keras.layers.Dense(8, activation='relu'))
-model.add(tf.keras.layers.Dense(output_size))
+model = create_model(input_size=input_size, output_size=output_size)
 
 optim = tf.keras.optimizers.Adam(learning_rate=learning_rate)
 loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
