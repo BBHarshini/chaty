@@ -1,9 +1,9 @@
+import os
 import json
 import numpy as np
-from nltk_utils import tokenize, stem, bag_of_words
 import tensorflow as tf
+from nltk_utils import tokenize, stem, bag_of_words
 from model import create_model
-import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 
 
