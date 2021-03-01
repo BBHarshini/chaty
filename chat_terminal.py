@@ -16,8 +16,14 @@ tags = data['tags']
 
 model = tf.keras.models.load_model('model_trained')
 
+bot_name = "Valentina"
+print("Vamos conversar! Digite 'sair' para encerrar")
+while True:
+    sentence = input("Você: ")
+    if sentence == 'sair':
+        print(f'Encerrando... Até logo.')
+        break
 
-def get_answer(sentence: str) -> str:
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
@@ -33,6 +39,6 @@ def get_answer(sentence: str) -> str:
     if prob > 0.75:
         for intent in intents['intents']:
             if tag == intent['tag']:
-                return random.choice(intent['responses'])
+                print(f"{bot_name}: {random.choice(intent['responses'])}")
     else:
-        return "Desculpe, não sei nada sobre isso..."
+        print(f"{bot_name}: Desculpe, não sei nada sobre isso...")
