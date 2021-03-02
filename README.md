@@ -1,4 +1,4 @@
-# A simple chatbot with tensorflow
+# A simple contextual chatbot with tensorflow
 
 Inpired by [python-engineer/pytorch-chatbot](https://github.com/python-engineer/pytorch-chatbot)
 
