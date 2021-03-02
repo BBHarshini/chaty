@@ -10,29 +10,26 @@ Using conda:
 ```
 conda create --name chatbot python==3.7
 conda activate chatbot
-conda install tensorflow nltk numpy
-# or:
-# conda install --file requirements.txt
+conda install --file requirements.txt
 ```
 
 Using venv:
 ```
 python3.7 -m venv venv
 . ./venv/bin/activate
-pip install tensorflow nltk numpy
-# or:
-# pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
 
-Run
+Training the model
 ```
 python train.py
 ```
 
-This will train and export the trained model into a `model_trained` directory and dump `disctionary.json` file. Then run
+This will train and export the trained model into a `model_trained` directory and dump a `dictionary.json` file.
 
+Running the API (development mode)
 ```
-python chat.py
+uvicorn api:app --reload
 ```
